@@ -1,0 +1,151 @@
+/* Improved Color Palette */
+:root {
+  --luberdi-red: #cc0000;           /* Slightly softened red */
+  --luberdi-red-hover: #aa0000;     /* Darker hover red */
+  --luberdi-black: #1a1a1a;         /* Softer black for less strain */
+  --luberdi-grey: #f8f8f8;          /* Lighter neutral background */
+  --luberdi-dark-grey: #444444;     /* Slightly brighter for contrast */
+  --white: #ffffff;
+}
+
+/* General body styles */
+body {
+  background-color: var(--white);
+  color: var(--luberdi-black);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header.bg-black {
+  background-color: var(--luberdi-black) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.logo a {
+  color: var(--white) !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link {
+  padding: 0.75rem 1.25rem;            /* Larger clickable area */
+  font-size: 1.05rem;                  /* Slightly larger text */
+  font-weight: 600;                    /* Semi-bold for better readability */
+  text-align: center;                 /* Centers text inside wider buttons */
+  min-width: 120px;                    /* Prevents them from being too narrow */
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 0.5rem;
+}
+
+/*.nav-link.active, .nav-link:focus, .nav-link:hover {
+  color: var(--luberdi-red) !important;
+}*/
+
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+  color: var(--luberdi-red) !important;
+  background-color: rgba(204, 0, 0, 0.08);
+}
+
+/* Social Icons */
+
+.social {
+  text-decoration: none !important;
+}
+
+.social a {
+  color: var(--white) !important;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+.social a:hover {
+  color: var(--luberdi-red) !important;
+  transform: scale(1.1);
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(rgba(204, 0, 0, 0.6), rgba(204, 0, 0, 0.6)), url('banner.jpg') center/cover no-repeat;
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.banner h1 {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  font-size: 2.5rem;
+}
+
+/* Presentación */
+.presentacion h2 {
+  color: var(--luberdi-red);
+  margin-top: 2rem;
+}
+.presentacion img {
+  border: 3px solid var(--luberdi-red);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ventajas */
+.ventajas {
+  background-color: var(--luberdi-grey) !important;
+  padding: 2rem 1rem;
+}
+.ventajas h2 {
+  color: var(--luberdi-black);
+  margin-bottom: 1rem;
+}
+.ventajas li {
+  background: var(--white);
+  border-left: 5px solid var(--luberdi-red);
+  color: var(--luberdi-dark-grey);
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.ventajas li:hover {
+  background: #f0f0f0;
+}
+
+/* Testimonios */
+.testimonios h2 {
+  color: var(--luberdi-red);
+  margin-bottom: 1.5rem;
+}
+.blockquote {
+  border-left: 5px solid var(--luberdi-red);
+  background: var(--luberdi-grey);
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer.bg-dark {
+  background-color: var(--luberdi-black) !important;
+  color: var(--white);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+footer .social a {
+  color: var(--white) !important;
+  transition: color 0.3s ease;
+}
+footer .social a:hover {
+  color: var(--luberdi-red) !important;
+}
+
+/* Buttons */
+.btn-danger, .btn--red {
+  background-color: var(--luberdi-red) !important;
+  border-color: var(--luberdi-red) !important;
+  color: var(--white);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.btn-danger:hover, .btn--red:hover {
+  background-color: var(--luberdi-red-hover) !important;
+  border-color: var(--luberdi-red-hover) !important;
+}
