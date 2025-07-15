@@ -18,7 +18,7 @@
   <!-- Background image style -->
   <style>
     body {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
         url('images/background.png') no-repeat center center fixed;
       background-size: cover;
     }
@@ -27,65 +27,61 @@
 
 <body class="bg-white text-dark">
   <!-- Modern Navbar Start -->
-  <nav class="navbar navbar-expand-lg" style="background: var(--luberdi-black); height: 70px; padding: 10px 0;">
-  <div class="container d-flex justify-content-between align-items-center">
-    <!-- Logo -->
-    <a class="navbar-brand text-white fw-bold fs-3 m-0" href="index.html">
-      <!-- Replace with <img src="logo.png" alt="Luberdi Security" style="height:40px;"> if needed -->
-      Luberdi Security
-    </a>
-
-    <!-- Social Media Icons (always visible) -->
-    <div class="d-flex align-items-center">
-      <a href="https://www.facebook.com/LuberdiSeguridad" target="_blank" aria-label="Facebook"
-        class="fs-5 px-3 py-2 rounded-circle social d-inline-flex align-items-center justify-content-center"
-        style="background-color: #1877F2; color: white; width: 42px; height: 42px; text-decoration: none;">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://wa.me/573015449252?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20puertas%20de%20seguridad" target="_blank" aria-label="WhatsApp"
-        class="fs-5 px-3 py-2 rounded-circle ms-2 social d-inline-flex align-items-center justify-content-center"
-        style="background-color: #25D366; color: white; width: 42px; height: 42px; text-decoration: none;">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <a href="mailto:luberdipuertasdeseguridad@gmail.com?subject=Consulta%20de%20puertas%20de%20seguridad&body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20puertas%20de%20seguridad" aria-label="Email"
-        class="fs-5 px-3 py-2 rounded-circle ms-2 social d-inline-flex align-items-center justify-content-center"
-        style="background-color: #EA4335; color: white; width: 42px; height: 42px; text-decoration: none;">
-        <i class="fas fa-envelope"></i>
-      </a>
-
-      <!-- Toggle button for mobile menu -->
-      <button class="navbar-toggler border-0 ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-        aria-controls="mainNavbar" aria-expanded="false" aria-label="Menú">
-        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-      </button>
-    </div>
-  </div>
-
-  <!-- Collapsible menu -->
-  <div class="collapse navbar-collapse justify-content-center mt-2" id="mainNavbar">
-    <ul class="navbar-nav mx-auto"
-      style="background: var(--luberdi-grey); min-width:50%; max-width:600px; border-radius: 2rem; box-shadow: 0 3px 8px rgba(0,0,0,0.04); padding: 6px 0;">
-      <li class="nav-item">
-        <a class="nav-link fw-semibold px-3" href="index.html">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fw-semibold px-3" href="about.html">Acerca de</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fw-semibold px-3" href="galeria.html">Productos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fw-semibold px-3" href="contacto.html">Contacto</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+  <nav class="navbar navbar-expand-lg"
+        style="background: var(--luberdi-black); height: 70px; padding-top: 10px; padding-bottom: 10px;">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-3 m-0" href="index.html">
+                <!-- Replace with <img src="logo.png" alt="Luberdi Security" style="height:40px;"> if needed -->
+                Luberdi Security
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Menú">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav mx-auto"
+                    style="background: var(--luberdi-grey); min-width:50%; max-width:600px; border-radius: 2rem; box-shadow: 0 3px 8px rgba(0,0,0,0.04);">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold px-3" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold px-3" href="about.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold px-3" href="galeria.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold px-3" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center ms-3">
+                    <a href="https://www.facebook.com/LuberdiSeguridad" target="_blank" aria-label="Facebook"
+                        class="fs-5 px-3 py-2 rounded-circle ms-2 social d-inline-flex align-items-center justify-content-center"
+                        style="background-color: #1877F2; color: white; width: 42px; height: 42px; transition: background 0.3s;">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/573015449252?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20puertas%20de%20seguridad"
+                        target="_blank" aria-label="WhatsApp"
+                        class="fs-5 px-3 py-2 rounded-circle ms-2 social d-inline-flex align-items-center justify-content-center"
+                        style="background-color: #25D366; color: white; width: 42px; height: 42px; transition: background 0.3s;">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:luberdipuertasdeseguridad@gmail.com ?subject=Consulta%20de%20puertas%20de%20seguridad&body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20puertas%20de%20seguridad"
+                        aria-label="Email"
+                        class="fs-5 px-3 py-2 rounded-circle ms-2 social d-inline-flex align-items-center justify-content-center"
+                        style="background-color: #EA4335; color: white; width: 42px; height: 42px; transition: background 0.3s;">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
   <!-- Modern Navbar End -->
 
   <section class="info-destacada py-5 text-center">
     <div class="container">
-      <h2 class="mb-4" style="color:var(--white);">¿Por qué elegir Luberdi Seguridad?</h2>
+      <h2 class="mb-4" style="color:var(--white);">Puertas de seguridad</h2>
       <div class="row justify-content-center mb-4">
         <div class="col-md-6">
           <p class="lead mb-4" style="color:var(--white);">
